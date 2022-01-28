@@ -135,6 +135,7 @@ GameManager.prototype.canMerge = function (cellValue1, cellValue2) {
   // Use heuristics rather than a lookup, because... it's fun.
   if (cellValue1 === 1 && cellValue2 === 1) return true;
   if (cellValue1 === -1 && cellValue2 === -1) return true;
+  if (cellValue1 === -2 && cellValue2 === -1) return true;
   if (cellValue1 > cellValue2) {
      if (cellValue1 <= cellValue2 * 2) return true;
   } else if (cellValue2 > cellValue1) {
