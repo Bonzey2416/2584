@@ -137,6 +137,20 @@ GameManager.prototype.canMerge = function (cellValue1, cellValue2) {
   if (cellValue1 === -1 && cellValue2 === -1) return true;
   if (cellValue1 === -2 && cellValue2 === -1) return true;
   if (cellValue1 === -1 && cellValue2 === -2) return true;
+  if (cellValue1 === -3 && cellValue2 === -2) return true;
+  if (cellValue1 === -2 && cellValue2 === -3) return true;
+  if (cellValue1 === -5 && cellValue2 === -3) return true;
+  if (cellValue1 === -3 && cellValue2 === -5) return true;
+  if (cellValue1 === -8 && cellValue2 === -5) return true;
+  if (cellValue1 === -5 && cellValue2 === -8) return true;
+  if (cellValue1 === -13 && cellValue2 === -8) return true;
+  if (cellValue1 === -8 && cellValue2 === -13) return true;
+  if (cellValue1 === -21 && cellValue2 === -13) return true;
+  if (cellValue1 === -13 && cellValue2 === -21) return true;
+  if (cellValue1 === -34 && cellValue2 === -21) return true;
+  if (cellValue1 === -21 && cellValue2 === -34) return true;
+  if (cellValue1 === -55 && cellValue2 === -34) return true;
+  if (cellValue1 === -34 && cellValue2 === -55) return true;
   if (cellValue1 > cellValue2) {
      if (cellValue1 <= cellValue2 * 2) return true;
   } else if (cellValue2 > cellValue1) {
